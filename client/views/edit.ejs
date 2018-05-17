@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit form ejs</title>
+</head>
+<body>
+    <h1>editor of <%= magic[0].name %></h1>
+    <form action="/panthers/<%= magic[0].id %>" method="POST">
+        <input type="text" name="name" value="<%= magic[0].name %>">
+        <input type="number" name="level" value="<%= magic[0].level %>">
+        <input type="text" name="weapon" value="<%= magic[0].weapon %>">
+        <input type="submit" value="make changes">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Khajit Squad</title>
+</head>
+<body>
+    <h1>Khajit Squad</h1>
+    <a href="/panthers/new">Add New Panther?</a>
+
+    <% for (var i = 0; i < stuff.length; i++){ %>
+        <h2><a href="/panthers/<%= stuff[i]._id %>" method ='get'><%= stuff[i].name %></a></h2>
+        <h2>Level: <%= stuff[i].level %></h2>
+        <h2>Weapon of Choice: <%= stuff[i].weapon %></h2>
+    <% } %>
+</body>
+</html>
